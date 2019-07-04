@@ -1,3 +1,11 @@
 {
-    "baseUrl": "https://www.google.com" 
+    "baseUrl": "https://www.google.com",
+    "pageLoadDefault": 60000,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+       }
 }

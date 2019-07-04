@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-07-04T11:28:49.378Z",
+    "end": "2019-07-04T11:28:52.999Z",
+    "duration": 3621,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b386612e-4049-43cc-b1e2-b5dec6d4e3e6",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "20a6ca04-ce1e-4f0c-97d4-547173c40016",
+          "title": "Search Google",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "search something",
+              "fullTitle": "Search Google search something",
+              "timedOut": null,
+              "duration": 3588,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var homePage = new _HomePage.default();\nvar resultPage = new _ResultPage.default();\nhomePage.fillSearch('Maximiliano alves da cruz');\nhomePage.clickSearch();\nresultPage.containsInPage('Maximiliano Alves');",
+              "err": {},
+              "uuid": "973d5401-d8b5-40cc-952f-86193ae6c2b9",
+              "parentUUID": "20a6ca04-ce1e-4f0c-97d4-547173c40016",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "973d5401-d8b5-40cc-952f-86193ae6c2b9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3588,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "useInlineDiffs": false
+      },
+      "version": "4.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.0.0"
+    }
+  }
+}
